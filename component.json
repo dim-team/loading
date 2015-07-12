@@ -1,6 +1,6 @@
 {
    "name": "loading-bounder",
-   "version": "1.0.2",
+   "version": "1.0.3",
    "description": "loading-bounder module",
    "main": "loading-bounder.js",
    "files": [
