@@ -1,0 +1,1 @@
+应用于dim(develop in modularization)框架的弹跳球loading加载组件
