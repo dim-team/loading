@@ -18,18 +18,23 @@
             transform: translateY(15vh) scaleY(1.02);
   }
 }
-#redball {
+.loading-bounder {
   border-radius: 50%;
   width: 20vw;
   height: 20vw;
   max-width: 250px;
   max-height: 250px;
-  background-image: -webkit-radial-gradient(25% 25%, ellipse farthest-corner, #f00, #000);
-  background-image: radial-gradient(ellipse farthest-corner at 25% 25%, #f00,#000);
-  margin: 0 auto;
+  background-image: -webkit-radial-gradient(25% 25%, ellipse farthest-corner, #83FA68, #34570D);
+  background-image: radial-gradient(ellipse farthest-corner at 25% 25%, #83FA68, #34570D);
   -webkit-transform-origin: center bottom;
       -ms-transform-origin: center bottom;
           transform-origin: center bottom;
   -webkit-animation: bounce 1.3s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
-          animation: bounce 1.3s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;   
+          animation: bounce 1.3s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+  z-index: 999;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -10vw;
+  display: none;  
 }

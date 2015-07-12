@@ -8,12 +8,17 @@ var BounderTpl = __inline('loading-bounder.handlebars');
 
 var LoadingBounder = {
 	init: function (options) {
-		this.options = options;
+		if (!this.status) {
+			this.options = options;
+			this.render();
+		}
+		
 	},
 	render: function () {
 		var BounderObj = $(BounderTpl()); 
 		this.BounderObj = BounderObj;
-		options.container.append(BounderObj);
+		this.options.container.append(BounderObj);
+		this.status = 1;
 	},
 	hide: function () {
 		this.BounderObj.hide();
