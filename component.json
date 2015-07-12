@@ -1,10 +1,10 @@
 {
    "name": "loading-bounder",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "description": "loading-bounder module",
    "main": "loading-bounder.js",
    "files": [
      "loading-bounder.handlebars",
-     "loading-bounder.less"
+     "loading-bounder.css"
    ]
 }
