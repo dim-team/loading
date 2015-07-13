@@ -4,9 +4,9 @@
  * @email JerroldLi@163.com
  * @update 2015.07.12
  */
-var BounderTpl = __inline('loading-bounder.handlebars');
+var LoadingTpl = __inline('loading.handlebars');
 
-var LoadingBounder = {
+var Loading = {
 	init: function (options) {
 		if (!this.status) {
 			this.options = options;
@@ -15,17 +15,17 @@ var LoadingBounder = {
 		
 	},
 	render: function () {
-		var BounderObj = $(BounderTpl()); 
-		this.BounderObj = BounderObj;
-		this.options.container.append(BounderObj);
+		var LoadingObj = $(LoadingTpl()); 
+		this.LoadingObj = LoadingObj;
+		this.options.container.append(LoadingObj);
 		this.status = 1;
 	},
 	hide: function () {
-		this.BounderObj.hide();
+		this.LoadingObj.hide();
 	},
 	show: function () {
-		this.BounderObj.show();
+		this.LoadingObj.show();
 	}
 };
 
-module.exports = LoadingBounder;
+module.exports = Loading;
