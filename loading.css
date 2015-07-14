@@ -1,3 +1,16 @@
+.loading-con {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background-color: #fff;
+  display: none;
+}
+
+
+/**
+ * 弹跳球loading效果
+ */
 @-webkit-keyframes bounce {
   from, to {
     -webkit-transform: translateY(30vh) scaleY(.98);
@@ -35,6 +48,5 @@
   position: absolute;
   top: 50px;
   left: 50%;
-  margin-left: -10vw;
-  display: none;  
+  margin-left: -10vw;  
 }
